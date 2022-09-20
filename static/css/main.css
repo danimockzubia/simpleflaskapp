@@ -40,3 +40,25 @@ td {
 #content {
   width: 70%;
 }
+
+
+input[type=text] {
+  background-color: chartreuse;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+ input[type=submit] {
+  border-radius: 5px;
+  border-color: chartreuse;
+  padding: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: chartreuse;
+  width: 25%;
+ }
+
+ input[type=submit]:hover {
+  color: black;
+  background-color: chartreuse;
+ }

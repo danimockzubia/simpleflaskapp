@@ -7,7 +7,9 @@
 {% block body %}
  <div class="content">
   <h1 style="text-align: center"><i class="fa-solid fa-skull-crossbones fa-fade"></i> Hacker Task Master <i class="fa-solid fa-skull-crossbones fa-fade"></i></h1>
-
+  {% if tasks|length < 1 %}
+  <h4 style="text-align: center"><i class="fa-solid fa-skull-crossbones"></i> There are no tasks, add one below! <i class="fa-solid fa-skull-crossbones"></i></h4>
+  {% else %}
   <table>
     <tr>
       <th>Task</th>
@@ -26,6 +28,8 @@
       </tr>
     {% endfor %}
   </table>
+  {% endif %}
+
 
   <form action="/" method="POST">
     <input type="text" name="content" id="content">
