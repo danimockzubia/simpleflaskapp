@@ -6,6 +6,10 @@ html {
   color: rgb(0, 255, 47)
 }
 
+h1 {
+  margin-top: 55px;
+}
+
 .content {
   margin: 0 auto;
   width: 400px;
